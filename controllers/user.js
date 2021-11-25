@@ -65,8 +65,11 @@ exports.validateToken = async (req, res) => {
         res.json({ accessToken })
     })
 
+}
 
-
+exports.deleteToken = async (req, res) => {
+    await Token.findOneAndDelete({ token: req.body.token })
+    res.sendStatus(204)
 }
 
 const generateAccessToken = (user) => {

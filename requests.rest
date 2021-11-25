@@ -35,3 +35,12 @@ Content-Type: application/json
 {
     "token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTlmMjZlNTI1YWFhNDlkOTQzMWY0M2IiLCJuYW1lIjoic3lhbSIsInBhc3N3b3JkIjoiJDJiJDEwJE4vTTI2UmpSYXJNTGV5UUcxTk5sdU96R2U5Lk1TanZkV2pleExhRHBwTzI4WkRzYjIvMWN5IiwiX192IjowLCJpYXQiOjE2Mzc4MjAxNTl9.ogTLfL1T3F4MfyO_uYT7Tw0ygNoj4oR6KNa-R4eRE2s"
 }
+
+###
+
+DELETE http://localhost:4000/logout
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTlmMjZlNTI1YWFhNDlkOTQzMWY0M2IiLCJuYW1lIjoic3lhbSIsInBhc3N3b3JkIjoiJDJiJDEwJE4vTTI2UmpSYXJNTGV5UUcxTk5sdU96R2U5Lk1TanZkV2pleExhRHBwTzI4WkRzYjIvMWN5IiwiX192IjowLCJpYXQiOjE2Mzc4MjI5OTh9.yZy6e8mGtidi6W4dYvw5x034ATYC3ClYLignUwewgss"
+}

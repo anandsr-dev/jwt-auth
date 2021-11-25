@@ -6,7 +6,7 @@ const mongoose = require('mongoose')
 
 app.use(express.json())
 
-const { userList, signup, login, validateToken } = require('./controllers/user')
+const { userList, signup, login, validateToken, deleteToken } = require('./controllers/user')
 
 app.get('/users', userList)
 
@@ -15,6 +15,8 @@ app.post('/users', signup)
 app.post('/login', login)
 
 app.post('/token', validateToken)
+
+app.delete('/logout', deleteToken)
 
 const start = async () => {
     await mongoose.connect(process.env.MONGO_URI, {
