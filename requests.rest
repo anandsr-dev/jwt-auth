@@ -1,23 +1,37 @@
 
 
-POST http://localhost:3000/users
+POST http://localhost:4000/users
 Content-Type: application/json
 
 {
-    "name" : "Anand",
+    "name" : "syam",
     "password" : "password"
 }
 
 ###
 
-GET http://localhost:3000/users
+GET http://localhost:4000/users
 
 ###
 
-POST http://localhost:3000/login
+POST http://localhost:4000/login
 Content-Type: application/json
 
 {
-    "name" : "Anand",
+    "name" : "syam",
     "password" : "password"
+}
+
+###
+
+GET http://localhost:3000/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic3lhbSIsImlhdCI6MTYzNzgyMDMwNSwiZXhwIjoxNjM3ODIwMzQwfQ.7lKp_RIlgSYPEphrD2JNF-jLlFt70HV0baXpydOQu_U
+
+###
+
+POST http://localhost:4000/token
+Content-Type: application/json
+
+{
+    "token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTlmMjZlNTI1YWFhNDlkOTQzMWY0M2IiLCJuYW1lIjoic3lhbSIsInBhc3N3b3JkIjoiJDJiJDEwJE4vTTI2UmpSYXJNTGV5UUcxTk5sdU96R2U5Lk1TanZkV2pleExhRHBwTzI4WkRzYjIvMWN5IiwiX192IjowLCJpYXQiOjE2Mzc4MjAxNTl9.ogTLfL1T3F4MfyO_uYT7Tw0ygNoj4oR6KNa-R4eRE2s"
 }

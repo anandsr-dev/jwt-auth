@@ -1,4 +1,4 @@
-const users = []
+
 const posts = [
     {
         username: 'anand',
@@ -10,4 +10,5 @@ const posts = [
     }
 ]
 
-module.exports = { users, posts }
+
+module.exports = { posts }
